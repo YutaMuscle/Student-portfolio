@@ -24,7 +24,7 @@ html body{
 @media screen and ( max-width:600px) {
 
     #top_div {
-        background-image: url('../Portfolio-img/phone-top.webp');
+        background-image: url('../Portfolio-img/photo-top.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
