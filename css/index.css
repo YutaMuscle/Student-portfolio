@@ -297,6 +297,7 @@ html body{
     bottom: 30px;
     right: 20px;
 }
+
 #page_top a {
     background-color: aqua;
     color: #fff;
@@ -305,6 +306,7 @@ html body{
     padding: 20px 20px;
     border-radius: 50%;
 }
+
 #page_top a:hover {
     background-color: aqua;
     opacity: 30%;
