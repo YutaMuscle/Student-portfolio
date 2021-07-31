@@ -8,7 +8,28 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <title>Yuta's Portfolio</title>
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        $(function () {
+            var pagetop = $('#page_top');
+            // ボタン非表示
+            pagetop.hide();
+            // 100px スクロールしたらボタン表示
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function () {
+                $('body, html').animate({ scrollTop: 0 }, 500);
+                return false;
+            });
+        });
+
+    </script>
 
 <body>
     <div id=top_div>
@@ -113,6 +134,7 @@
             </p>
         </div>
     </div>
+    <div id="page_top"><a href="#">TOP</a></div>
 </body>
 
 </html>
